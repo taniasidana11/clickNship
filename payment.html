@@ -1,0 +1,232 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Payment | clickNship | index Website Design</title>
+    <link rel="icon" href="./Images/logo1.png" >
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   
+   
+    <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"> <img src="./Images/logo1.png" width="80px"></a> 
+        </div>
+        <nav >
+            <ul id="MenuItems">
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="about1">About</a></li> 
+                <li><a href="contactus.html" class="button">Contact Us</a></li> 
+                <li><a href="new.html" class="">Login</a></li>
+           
+        </ul>
+        </nav>
+        <a href="samsungcart.html"> <img src="./Images/cart.png" width="25px" height="25px"></a>
+        <img src="./Images/111.png" class="menu-icon"  onclick="menutoggle()" width="25px" height="25px">
+    </div>
+   
+</div>
+
+<!-- adress form -->
+
+<form id="addressForm">
+    <h2>Add payment method  <img src="./Images/visa.png" width="40" height="40"> <img src="./Images/mastercard.png" width="50" height="30"> </h2>
+   
+    <div class="form-group">
+        <label for="country">Select Payment Method </label>
+        <select class="expiry-select" id="expiryMonth">
+            <option selected>Debit Card</option>
+            <option>Credit Card</option>
+            <option>BHIM UPI</option>
+            <option>Netbanking</option>
+            <option>Cash on delivery</option>
+        </select>
+        
+        <div class="form-group">
+            <label for="fullName"><br>Full Name (First and Last Name)</label>
+            <input type="text" id="fullName" name="fullName" class="bold-border" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Card number</label>
+            <input type="password" id="email" name="email" class="password-input" required>
+        </div>
+        
+
+            <div class="form-group">
+                <label for="email">Expiry date</label>
+                <br>
+                <select class="expiry-select" id="expiryMonth">
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+                <option>04</option>
+                <option>05</option>
+                <option>06</option>
+                <option>07</option>
+                <option>08</option>
+                <option>09</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                    <!-- Other options -->
+                </select>
+                <select class="expiry-select" id="expiryYear">
+                    <option>2024</option>
+                    <option>2025</option>
+                    <option>2026</option>
+                    <option>2027</option>
+                    <option>2028</option>
+                    <option>2029</option>
+                    <option>2030</option>
+                    <option>2031</option>
+                    <option>2032</option>
+                    <option>2033</option>
+                    <option>2034</option>
+                    <option>2035</option>
+                    <option>2036</option>
+                    <option>2037</option>
+                    <option>2038</option>
+                    <option>2039</option>
+                    <option>2040</option>
+                    <option>2041</option>
+                    <option>2042</option>
+                    <option>2043</option>
+                    <option>2044</option>
+                    <!-- Other options -->
+                </select>
+            </div>
+
+
+       
+    </div>
+
+
+
+    <button type="button" onclick="Order()" >Save Card</button>
+</form>
+
+
+ <!-- Saved Addresses Section -->
+
+ 
+
+ <div class="container">
+    <br>
+     <h2>Select payment method</h2>
+     
+    <br>
+    <div id="savedAddresses">
+        <!-- Saved Address 1 -->
+        <div class="addressItem">
+            
+            <input type="radio" id="address1" name="savedAddress" class="addressRadio">
+        
+            <label class="addressLabel" for="address1">
+             <div>
+                <img src="./Images/sbi.png" width="40" height="30">
+             </div>
+                <br>
+                SBI Bank<br>Debit Card<br>**3243<br>Rupay<br>TestUser</label>
+        </div>
+        <!-- Saved Address 2 -->
+        <div class="addressItem">
+            <input type="radio" id="address2" name="savedAddress" class="addressRadio">
+            <label class="addressLabel" for="address2">
+                <div>
+                    <img src="./Images/bhim_upi.png" width="40" height="30">
+                </div>
+                <br>
+                BHIM UPI<br>paytm<br>7678965643232@paytm<br>Testuser</label>
+        </div>
+    </div>
+    <a class="btn" onclick="placeOrder()" href="tracking.html">Proceed</a>
+   
+</div>
+
+<br>
+
+
+<br>
+<!-- footer -->
+
+<div class="footer">
+    <div class="container">
+        <h3>ClickNShip </h3>
+        <h4>All copyright reserved 2023-24</h4>
+        <br>
+        <div class="row">
+            
+            <div class="footer-col-1">
+                <h3>Download our app</h3>
+                <p>Download App for android and ios mobile phones.</p>
+                <p></p>
+                <div class="app-logo">
+                    <a href="index.html">  <img src="https://cdn.freebiesupply.com/logos/large/2x/available-on-the-app-store-logo-png-transparent.png"></a>
+                  <a href="index.html">    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4vAY3456vFc2CJ2r-_Flhamdb-t9LCgzJwBI_RDp6AA&s"></a>
+                    
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <a href="index.html"><img src="./Images/logo1.png" width="80px"></a>
+                <p>Our Purpose is to Sustainably Make the Pleasure and Benefits of Online Shopping.</p>
+            </div>
+
+           
+
+            <div class="footer-col-3">
+                <h3>Usefull links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog & Post</li>
+                    <li>Return & Refund</li>
+                    <li>Affliate</li>
+                    </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                    </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright-2024 </p>
+    </hr>
+    
+    </div>
+</div>
+
+ <!-- js for toggle memu -->
+
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight=="0px")
+        {
+            MenuItems.style.maxHeight="200px";
+        }
+            else
+            {
+     MenuItems.style.maxHeight="0px";
+    }
+    }
+    function Order() {
+        alert("Please fill the credentials");
+    }
+    function placeOrder() {
+        alert("Thank you for placing your order!");
+    }
+</script>
+
+
+
+</body>
+</html>
